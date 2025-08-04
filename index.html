@@ -16,63 +16,65 @@
     <nav class="nav-container">
       <a href="#hero" class="logo">Kippa<span class="highlight">.me</span></a>
       <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#features">What it Does</a></li>
+        <li><a href="#about">Who I Am</a></li>
+        <li><a href="#contact">Say Hi</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="hero" class="section hero">
-    <div class="hero-content">
-      <h1>Your Next-Level Simple Website</h1>
-      <p>Clean, dynamic, and effortlessly beautiful — designed to grow your brand.</p>
-      <a href="#contact" class="btn-primary">Get Started</a>
-    </div>
-  </section>
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-content">
+        <h1>Hey, welcome to Kippa.me</h1>
+        <p>This is where I share cool stuff and build something real. Stick around, it'll get good.</p>
+        <a href="#contact" class="btn-primary">Let’s Chat</a>
+      </div>
+    </section>
 
-  <section id="features" class="section features fade-in">
-    <h2>Features</h2>
-    <div class="features-grid">
-      <div class="feature">
-        <h3>Modern Design</h3>
-        <p>Minimalistic and elegant layout inspired by Apple’s clean aesthetic.</p>
+    <section id="features" class="section features fade-in">
+      <h2>What It Does</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Straightforward</h3>
+          <p>No fluff — just what you need, easy and clean.</p>
+        </div>
+        <div class="feature">
+          <h3>Works Everywhere</h3>
+          <p>Looks good on your phone, laptop, or whatever you use.</p>
+        </div>
+        <div class="feature">
+          <h3>Feels Smooth</h3>
+          <p>Simple animations that don’t get in your way.</p>
+        </div>
+        <div class="feature">
+          <h3>Make It Yours</h3>
+          <p>Easy to tweak and change to fit your style.</p>
+        </div>
       </div>
-      <div class="feature">
-        <h3>Responsive</h3>
-        <p>Looks stunning on all devices, from mobile to widescreen.</p>
-      </div>
-      <div class="feature">
-        <h3>Smooth Animations</h3>
-        <p>Subtle fade-ins and scroll effects for a polished feel.</p>
-      </div>
-      <div class="feature">
-        <h3>Easy to Customize</h3>
-        <p>Simple code that you can extend or personalize easily.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section about fade-in">
-    <h2>About Kippa.me</h2>
-    <p>
-      Kippa.me is your clean, beautiful starting point for building an impactful web presence. Whether you want a personal portfolio, product landing page, or business site, this template is crafted to impress and convert.
-    </p>
-  </section>
+    <section id="about" class="section about fade-in">
+      <h2>Who I Am</h2>
+      <p>
+        I’m just a person who loves making clean, simple websites that do what they’re supposed to do. No drama, no nonsense — just solid stuff you can rely on.
+      </p>
+    </section>
 
-  <section id="contact" class="section contact fade-in">
-    <h2>Contact</h2>
-    <p>Interested in learning more or getting started? Reach out!</p>
-    <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn-primary">Send</button>
-    </form>
-  </section>
+    <section id="contact" class="section contact fade-in">
+      <h2>Say Hi</h2>
+      <p>If you wanna connect, ask questions, or just say hello, drop me a message below.</p>
+      <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Kippa.me — Crafted with care.</p>
+    <p>© 2025 Matthew Haney — Thanks for stopping by.</p>
   </footer>
 
   <script src="script.js"></script>
@@ -80,7 +82,7 @@
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("/sw.js").then(registration => {
-          console.log("Service Worker registered with scope:", registration.scope);
+          console.log("Service Worker registered:", registration.scope);
         }).catch(error => {
           console.log("Service Worker registration failed:", error);
         });
