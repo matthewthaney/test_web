@@ -206,3 +206,9 @@ footer {
     display: none;
   }
 }
+
+body, header {
+  outline: 2px solid red;
+  margin: 0 !important;
+  padding: 0 !important;
+}
